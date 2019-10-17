@@ -3,8 +3,8 @@ import part from '../part.jpg'
 import Logo from '../logo.js';
 import { connect } from 'react-redux';
 import {  Link } from 'react-router-dom';
-class Header extends React.Component {
-  
+
+class Header extends React.Component {  
     render() {
         return (
             <header>
@@ -59,7 +59,6 @@ class Header extends React.Component {
                             </Link>
                             
                             <a href="#"><div class="icons"><span id = 'counter'>{this.props.cart.length}</span><span>Количество в корзине</span></div></a>
-                            {console.log(this.props)}
                             <Link to='/cart'>
                             <a href=""><div class="icons"><span><i class="fa fa-shopping-basket" aria-hidden="true"></i></span>
                                 <span>

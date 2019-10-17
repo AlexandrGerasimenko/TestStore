@@ -54,7 +54,8 @@ const SignUp = () => (
           {errors.login &&
             touched.login && (
               <div className="field-error">{errors.login}</div>
-            )}
+            )
+          }
 
           <label htmlFor="password">Password </label>
           <Field name="password" placeholder="Password should contain at least one number, symbol and letter" type="password" />
@@ -62,7 +63,8 @@ const SignUp = () => (
           {errors.password &&
             touched.password && (
               <div className="field-error">{errors.password}</div>
-            )}
+            )
+          }
 
           <button type="submit"> <Link to='/market'>Submit</Link></button>
         </Form>

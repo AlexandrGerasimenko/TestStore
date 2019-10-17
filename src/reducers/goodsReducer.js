@@ -1,6 +1,3 @@
-
-
-
  function GoodsReducer(state, action) {
     if (!state)
         return {

@@ -32,6 +32,7 @@ function App() {
               {/* <Sider /> */}
               <Switch>
                 <Route path="/login" component={LoginPage} />
+                <Route path="/" component={localStorage.login && localStorage.password ? MarketPage :LoginPage } exact />
                 <PrivateRoute path="/market" exact component={MarketPage} />
                 <PrivateRoute path="/cart"  component={CartPage} />
               </Switch>
